@@ -1,14 +1,14 @@
 -- ~/.config/nvim/lua/plugins/colorscheme.lua
 return {
-  "EdenEast/nightfox.nvim",
+  "folke/tokyonight.nvim",
   priority = 1000,  -- ensure it loads early
   config = function()
     -- optional: setup with custom settings
-    require("nightfox").setup({
+    require("tokyonight").setup({
       -- options = { ... } -- your preferences if any
     })
 
-    vim.cmd("colorscheme nordfox")
+    vim.cmd("colorscheme tokyonight")
   end,
 }
 
