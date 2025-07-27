@@ -1,10 +1,14 @@
+-- ~/.config/nvim/lua/plugins/colorscheme.lua
 return {
-	{
-		"shaunsingh/nord.nvim",
-		priority = 1000,  -- Make sure the theme loads early
-		config = function()
-			vim.cmd.colorscheme("nord")
+  "EdenEast/nightfox.nvim",
+  priority = 1000,  -- ensure it loads early
+  config = function()
+    -- optional: setup with custom settings
+    require("nightfox").setup({
+      -- options = { ... } -- your preferences if any
+    })
 
-		end
-	}
+    vim.cmd("colorscheme nordfox")
+  end,
 }
+
